@@ -1,0 +1,13 @@
+name: DreamAnnotate
+author: alexkar598
+description: Parse and annotate the output of dreamcheck
+inputs:
+  outputFile:
+    description: Output of DreamCheck
+    required: true
+runs:
+  using: node12
+  main: dist/main.js
+branding:
+  icon: file-text
+  color: orange

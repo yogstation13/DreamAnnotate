@@ -1,0 +1,14 @@
+{
+  "name": "dreamannotate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@actions/core": "^1.2.5",
+    "@types/node": "^14.10.1"
+  }
+}
