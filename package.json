@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "private": true,
+  "author": "alexkar598",
   "types": "dist/index.d.ts",
   "dependencies": {
     "@actions/core": "^1.2.5",
