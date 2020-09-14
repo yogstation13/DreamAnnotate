@@ -7,7 +7,7 @@ inputs:
     required: true
 runs:
   using: node12
-  main: dist/main.js
+  main: dist/index.js
 branding:
   icon: file-text
   color: orange
