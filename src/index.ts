@@ -10,6 +10,8 @@ export interface Match {
     message: string
 }
 
+process.stdout.write("::warning file=README.md::This version of DreamAnnotate is deprecated, see https://github.com/yogstation13/DreamAnnotate/discussions/1 for more details." + os.EOL)
+
 try {
     const data = fs.readFileSync(core.getInput("outputFile")).toString("utf8");
     core.info("DreamChecker Output: ");
@@ -21,5 +23,6 @@ try {
         process.stdout.write(`::${match.type} file=${match.filename},line=${match.line},col=${match.column}::${match.message}${os.EOL}`)
     }
 } catch (error) {
+    //@ts-ignore
     core.setFailed(error.message)
 }
